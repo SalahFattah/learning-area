@@ -42,7 +42,12 @@
     const color = 'blue';
 
     // Add your code here
-
+    function coloring(){
+      ctx.clearRect(x,y,width,height);
+      ctx.fillStyle=color;
+      ctx.fillRect(x,y,width,height);
+    }
+    coloring();
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
