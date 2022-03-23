@@ -34,8 +34,9 @@
       return Math.floor(Math.random()*(max-min+1))+min;
     }
     function chooseName(){
-      return names[random(0,names.length)];
+      return names[random(0,names.length-1)];
     }
+    para.textContent=chooseName();
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
